@@ -5,7 +5,7 @@
     background-color: white;    
 }
 #c1 {
-    margin-left: 25%;
+    margin-left: 20%;
 }
 
 #nav1 {
@@ -19,8 +19,15 @@
     height:initial;
 }
 
+#textName {
+    position: center;
+    display: inline-block;
+}
+
 .carousel-inner img {
     height: auto;
+    /*change here to modify carousel images' width*/
+    width:inherit;
     margin: auto;
 }
 
