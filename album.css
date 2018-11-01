@@ -1,0 +1,70 @@
+.container {
+    margin-right: 10px;
+    margin-left: 10px;
+    /*max-width: 1200px;*/ /* or 950px */
+    background-color: white;    
+}
+
+#nav1 {
+    margin-top: 20%;
+    position: page;
+    display: inline-block;
+    float: initial;
+    vertical-align: middle;
+}
+
+.carousel-inner img {
+    height: auto;
+    margin: auto;
+}
+
+#buttonMenu {
+    background-color: transparent;
+}
+
+.col-md-4 {
+    padding-top: 10px
+}
+
+.img-circle {
+    margin: 10px;
+    border-radius: 50%;
+    /*display: inline-block;*/
+    border: 2px;
+    width: 175px;
+    height: 175px;
+}
+/*overlay background color*/
+.overlay {
+    margin: 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0;
+    width: 175px;
+    height: 175px;
+    transition: .5s ease;
+    background-color: dimgray;
+}
+.img-circle:hover .overlay {
+    transform: scale(0.9);
+    opacity: 0.85;
+}
+/*text*/
+.text{
+    font-size: 32px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+nav#nav
+{
+    flex-direction:column;
+}
