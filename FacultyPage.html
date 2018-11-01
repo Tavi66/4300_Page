@@ -14,19 +14,35 @@
     <!-- Page container -->
     <div class="container">
         <!-- navbar -->
+        <!-- Change profile picture here -->
         <nav class="navbar navbar-expand navbar-light bg-light" style="color:white; vertical-align: middle; align-content:center;" id="nav1">
 
             <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- Profile circle image -->
+            <!--
+                <img class="img-circle" src="assets/img/image_name.jpg" />
+             -->
+            <div class="card-img-top; img-circle" style="position: relative; margin-bottom: 30%; margin-top: 30%;">
+                <a href="#">
+                    <img class="img-circle" src="http://pinegrow.com/placeholders/img16.jpg" />
+                    <div class="overlay">
+                        <div class="text">
+                            NAME
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!--  -->
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul>
                     <!-- to add section heading modify id of section to redirect to
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-target="#id"> section title </a>
-                </li>
-                                    -->
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-target="#id"> section title </a>
+            </li>
+                                -->
                     <li class="nav-item active">
                         <a class="nav-link" href="#" data-target="#home"> HOME </a>
                     </li>
@@ -52,6 +68,34 @@
         <!-- Page Content -->
         <!-- Add content and id in this container -->
         <div class="container" id="c1">
+
+            <!-- Image Carousel -->
+            <!-- Images will cycle automatically -->
+            <div id="carouselHome" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselHome" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselHome" data-slide-to="1"></li>
+                    <li data-target="#carouselHome" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrappers for slides -->
+                <!-- Change carousel images here -->
+                <!--
+                      <img src="assets/img/image_name.jpg" alt="alt image text" />
+                -->
+                <div class="carousel-inner justify-content-center">
+                    <div class="carousel-item active">
+                        <img src="assets/img/x.jpg" alt="temp img 1" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/y.jpg" alt="temp img 2" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/img/z.jpg" alt="temp img 3" />
+                    </div>
+                </div>
+
+            </div>
             <ul style="position:center;">
                 <li>
                     text
@@ -69,7 +113,6 @@
             <img src="assets/img/blank_img.jpg" />
             <img src="assets/img/x.jpg" />
             <img src="assets/img/y.jpg" />
-            <img src="assets/img/z.jpg" />
         </div>
     </div>
     <!-- Bootstrap core JavaScript
