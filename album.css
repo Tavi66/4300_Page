@@ -1,16 +1,22 @@
 .container {
     margin-right: 10px;
     margin-left: 10px;
-    /*max-width: 1200px;*/ /* or 950px */
+    max-width: 1200px;  /*or 950px*/ 
     background-color: white;    
+}
+#c1 {
+    margin-left: 25%;
 }
 
 #nav1 {
-    margin-top: 20%;
-    position: page;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    position:fixed;
     display: inline-block;
-    float: initial;
+    float: left;
     vertical-align: middle;
+    width: 256px;
+    height:initial;
 }
 
 .carousel-inner img {
