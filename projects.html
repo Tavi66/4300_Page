@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE HTML>
 <html>
 
 <head>
@@ -22,7 +22,7 @@
         <!--
         <img class="img-circle" src="assets/img/image_name.jpg" />
             -->
-        <div class="card-img-top; img-circle" style="position: relative; margin-top: 25%;">
+        <div class="card-img-top img-circle" style="position: relative; margin-top: 25%;">
             <a href="#">
                 <img class="img-circle" src="http://pinegrow.com/placeholders/img16.jpg" />
             </a>
@@ -66,80 +66,145 @@
     </nav>
     <!-- Page Content -->
     <!-- Add content and id in this container -->
+    <!-- when adding new cards rename instances of 'projectPaneln', for n, project number -->
     <div class="container" id="c1">
-        <!-- Projects -->
-        <h4> PROJECTS </h4>
-        <!-- ROW 1 -->
-        <div class="row">
-            <!-- CARD 1 -->
-            <div class="col-4">
-                <div class="card bg-light mb-3" style="max-width: 20rem;">
-                    <div class="card-header">Header</div>
-                    <img class="card-img-top" src="https://loremflickr.com/320/240" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Light card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- CARD 2 -->
-            <div class="col-4">
-                <div class="card bg-light mb-3" style="max-width: 20rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Light card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- CARD 3 -->
-            <div class="col-4">
-                <div class="card bg-light mb-3" style="max-width: 20rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Light card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                </div>
-            </div>
+        <!-- PROJECTS -->
+        <h4 style="padding-top:10px;"> PROJECTS </h4>
+        <div id="projects-overview">
+            <p>
+                Project Overview and relevant information.
+            </p>
         </div>
-        <!-- ROW 2 -->
-        <div class="row">
+        <div id="background-a"> </div>
+        <!-- COL 1 -->
+        <div class="col" id="accordian">
             <!-- CARD 1 -->
-            <div class="col-4">
-                <div class="card bg-light mb-3" style="max-width: 20rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Light card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div id="cardx">
+                <div class="img-hover" style="position:relative;">
+                    <img class="img-hover" src="https://loremflickr.com/320/240" alt="Card image cap">
+                    <div class="overlay" data-target="#projectPanel1" aria-controls="projectPanel1" data-toggle="collapse" aria-expanded="true">
                     </div>
+                </div>
+                <div class="collapse" id="projectPanel1" data-parent="#accordian">
+                    <p id="projectsText" class="container_projects_text">
+                        <b> Project 1 Title </b>
+                        <br />
+                        Summary
+                        <br />
+                        Etc.
+                        <img src="assets/img/blank_img.jpg" />
+                    </p>
                 </div>
             </div>
             <!-- CARD 2 -->
-            <div class="col-4">
-                <div class="card bg-light mb-3" style="max-width: 20rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Light card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div id="cardx">
+                <div class="img-hover" style="position:relative;">
+                    <img class="img-hover" src="https://loremflickr.com/320/240" alt="Card image cap">
+                    <div class="overlay" data-target="#projectPanel2" aria-controls="projectPanel2" data-toggle="collapse" aria-expanded="true">
                     </div>
+                </div>
+                <div class="collapse" id="projectPanel2" data-parent="#accordian">
+                    <p id="projectsText" class="container_projects_text">
+                        <b> Project 2 Title </b>
+                        <br />
+                        Summary
+                        <br />
+                        Etc.
+                        <img src="assets/img/blank_img.jpg" />
+                    </p>
                 </div>
             </div>
             <!-- CARD 3 -->
-            <div class="col-4">
-                <div class="card bg-light mb-3" style="max-width: 20rem;">
-                    <div class="card-header">Header</div>
-                    <div class="card-body">
-                        <h5 class="card-title">Light card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <div id="cardx">
+                <div class="img-hover" style="position:relative;">
+                    <img class="img-hover" src="https://loremflickr.com/320/240" alt="Card image cap">
+                    <div class="overlay" data-target="#projectPanel3" aria-controls="projectPanel3" data-toggle="collapse" aria-expanded="false">
                     </div>
+                </div>
+                <div class="collapse" id="projectPanel3" aria-labelledby="card3" data-parent="#accordian">
+                    <p id="projectsText" class="container_projects_text">
+                        <b> Project 3 Title </b>
+                        <br />
+                        Summary
+                        <br />
+                        Etc.
+                        <img src="assets/img/blank_img.jpg" />
+                    </p>
+                </div>
+            </div>
+            <!-- CARD 4 -->
+            <div id="card4">
+                <div class="img-hover" style="position:relative;">
+                    <img class="img-hover" src="https://loremflickr.com/320/240" alt="Card image cap">
+                    <div class="overlay" data-target="#projectPanel4" aria-controls="projectPanel4" data-toggle="collapse" aria-expanded="false">
+                        <div class="text"> Project Title </div>
+                    </div>
+                </div>
+                <div class="collapse" id="projectPanel4" aria-labelledby="card4" data-parent="#accordian">
+                    <p id="projectsText" class="container_projects_text">
+                        <b> Project 4 Title </b>
+                        <br />
+                        Summary
+                        <br />
+                        Etc.
+                        <img src="assets/img/blank_img.jpg" />
+                    </p>
+                </div>
+            </div>
+            <!-- CARD 5 -->
+            <div id="card5">
+                <div class="img-hover" style="position:relative;">
+                    <img class="img-hover" src="https://loremflickr.com/320/240" alt="Card image cap">
+                    <div class="overlay" data-target="#projectPanel5" aria-controls="projectPanel5" data-toggle="collapse" aria-expanded="true">
+                        <div class="text"> Project Title </div>
+                    </div>
+                </div>
+                <div class="collapse" id="projectPanel5" aria-labelledby="card5" data-parent="#accordian">
+                    <p id="projectsText" class="container_projects_text">
+                        <b> Project 5 Title </b>
+                        <br />
+                        Summary
+                        <br />
+                        Etc.
+                        <br />
+                        .
+                        <br />
+                        .
+                        <br />
+                        .
+                        <img src="assets/img/blank_img.jpg" />
+                    </p>
+                </div>
+            </div>
+            <!-- CARD 6 -->
+            <div id="card6">
+                <div class="img-hover" style="position:relative;">
+                    <img class="img-hover" src="https://loremflickr.com/320/240" alt="Card image cap">
+                    <div class="overlay" data-target="#projectPanel6" aria-controls="projectPanel6" data-toggle="collapse" aria-expanded="false">
+                        <div class="text"> Project Title </div>
+                    </div>
+                </div>
+                <div class="collapse" id="projectPanel6" aria-labelledby="card6" data-parent="#accordian">
+                    <p id="projectsText" class="container_projects_text">
+                        <b> Project 6 Title </b>
+                        <br />
+                        Summary
+                        <br />
+                        Etc.
+                        <br />
+                        .
+                        <br />
+                        .
+                        <br />
+                        .
+                        <img src="assets/img/blank_img.jpg" />
+                    </p>
                 </div>
             </div>
         </div>
         <!-- END OF PROJECTS SECTION -->
     </div>
     <!-- JavaScript -->
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
