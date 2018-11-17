@@ -6,6 +6,8 @@
 }
 .name { text-align:center; }
 
+#nav1 { z-index: 100; }
+
 .nav-item a{
     color: black;
 }
@@ -17,8 +19,6 @@
 .active a {
     font-weight: bold;
 }
-
-.nav-item:after{}
 
 #c1 {
     padding-top: 10px;
@@ -67,7 +67,7 @@ button[aria-expanded="true"] {
         padding-bottom: 20%;
         position: fixed;
         display: inline-block;
-        float: left;
+        float:left;
         vertical-align: middle;
         width: 256px;
         height: initial;
@@ -88,7 +88,7 @@ button[aria-expanded="true"] {
 .timeline {
     float:left;
     position: relative;
-    max-width: 1600px;
+    max-width: 1525px;
     margin: 0 auto;
 }
 
@@ -108,31 +108,15 @@ button[aria-expanded="true"] {
     left: 0;
 }
 
-/* Place the container to the right */
-.right {
-    left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left::before {
-    content: " ";
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 0;
-    z-index: 1;
-    right: 30px;
-    border: medium solid white;
-    border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent white;
-}
-
 /* The actual content */
 .content {
     padding: 20px 30px;
     background-color: ghostwhite;
     position: relative;
     border-radius: 6px;
+}
+#researchTimeline .content {
+    background-color: lemonchiffon;
 }
 
 /* Container around content */
@@ -156,22 +140,10 @@ button[aria-expanded="true"] {
         border-radius: 50%;
         z-index: 1;
     }
-    /* Make sure that all arrows are pointing leftwards */
-    .container_t::before {
-        left: 60px;
-        border: medium solid white;
-        border-width: 10px 10px 10px 0;
-        border-color: transparent white transparent transparent;
-    }
 
 /* Make sure all circles are at the same spot */
 .left::after {
     left: 15px;
-}
-
-/* Make all right containers behave like the left ones */
-.right {
-    left: 0%;
 }
 
 .col-md-4 {
@@ -186,37 +158,96 @@ button[aria-expanded="true"] {
     width: 175px;
     height: 175px;
 }
+.img-hover {
+    left:-30px;
+    margin: 25px;
+    position: absolute;
+    border: 2px;
+    width: 100px;
+    height: 100px;
+}
+
 /*overlay background color*/
 .overlay {
-    margin: 10px;
-    border-radius: 50%;
+    margin: 25px;
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
-    left: 0;
+    left: inherit;
     opacity: 0;
-    width: 175px;
-    height: 175px;
-    transition: .5s ease;
-    background-color: dimgray;
+    width: inherit;
+    height: inherit;
+    background-color: lightgray;
+    transition: ease-in 0.3s;
 }
-.img-circle:hover .overlay {
-    transform: scale(0.9);
-    opacity: 0.85;
+.img-hover:hover .overlay {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transform: scale(1.1);
+    opacity: 0.45;
 }
 /*text*/
 .text{
-    font-size: 32px;
-    color: white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-align: center;
+    opacity:0;
+    font-size: 24px;
+    color: black;
+    text-align: left;
+    transform:translate(0,-35px);
+}
+/* Slide Up animation */
+.SlideUp {
+    height:0;
 }
 
-nav#nav
-{
-    flex-direction:column;
+@keyframes SlideUp {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+#projectsText {
+    position:absolute;
+    top:10px;
+    height: 100%;
+    margin: 0;
+    left: 150px;
+    overflow:hidden;
+    animation: SlideUp 1s ease-out;
+    max-width:100%;
+}
+
+#projectsText img {
+    display:block;
+    max-width:90%;
+}
+/*change project title font size here*/
+#projectsText b{
+    font-size:16pt;
+}
+
+/*background for projects info*/
+#background-a {
+    width: 1050px;
+    height: 1000px;
+    float:right;
+    top:10px;
+    left:10px;
+    max-width:100%;
+    /* change color here */
+    background-color: dimgray;
+}
+#projects-overview {
+    width: 1200px;
+    height: 100%;
+    display:block;
+    right: 10px;
+    padding:10px;
+    margin:10px;
+    max-width: 100%;
+    /* change color here */
+    background-color: #42DCA3;
 }
