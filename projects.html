@@ -6,37 +6,37 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    <title> Home </title>
+    <title> Projects </title>
     <link href="album.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Page Content -->
     <!-- navbar -->
-    <nav class="navbar navbar-expand navbar-light bg-light" style="color:white; vertical-align: middle; align-content:center;" id="nav1">
-
-        <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="color:white; vertical-align: middle; align-content:center;" id="nav1">
         <!-- Profile image -->
         <!--
-        <img class="img-circle" src="assets/img/image_name.jpg" />
-            -->
-        <div class="card-img-top img-circle" style="position: relative; margin-top: 25%;">
+    <img class="img-circle" src="assets/img/image_name.jpg" />
+        -->
+        <div class="card-img-top img-circle collapse navbar-collapse" style="position: relative; margin-top: 25%;">
             <a href="#">
                 <img class="img-circle" src="http://pinegrow.com/placeholders/img16.jpg" />
             </a>
         </div>
+        <!--  -->
+        <button class="navbar-toggler-left navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <!-- Name -->
         <p class="name" style="color:black; padding-top:10px; font-weight:bold;"> Dr. Ting Zhang </p>
         <!--  -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul style="list-style-type:none;">
                 <!-- to add section heading modify id of section to redirect to
-                <li class="nav-item">
-                    <a class="nav-link" href="nameOfSection.html"> section title </a>
-                </li>
-                                    -->
+            <li class="nav-item">
+                <a class="nav-link" href="nameOfSection.html"> section title </a>
+            </li>
+                                -->
                 <li class="nav-item">
                     <a class="nav-link" href="home.html"> HOME </a>
                 </li>
@@ -69,10 +69,10 @@
     <!-- when adding new cards rename instances of 'projectPaneln', for n, project number -->
     <div class="container" id="c1">
         <!-- PROJECTS -->
-        <h4 style="padding-top:10px;"> PROJECTS </h4>
+        <h3 style="padding-top:10px;"> PROJECTS </h3>
         <div id="projects-overview">
             <p>
-                Project Overview and relevant information.
+                Projects Overview.
             </p>
         </div>
         <div id="background-a"> </div>
@@ -118,6 +118,7 @@
             <div id="cardx">
                 <div class="img-hover" style="position:relative;">
                     <img class="img-hover" src="https://loremflickr.com/320/240" alt="Card image cap">
+
                     <div class="overlay" data-target="#projectPanel3" aria-controls="projectPanel3" data-toggle="collapse" aria-expanded="false">
                     </div>
                 </div>
@@ -137,7 +138,6 @@
                 <div class="img-hover" style="position:relative;">
                     <img class="img-hover" src="https://loremflickr.com/320/240" alt="Card image cap">
                     <div class="overlay" data-target="#projectPanel4" aria-controls="projectPanel4" data-toggle="collapse" aria-expanded="false">
-                        <div class="text"> Project Title </div>
                     </div>
                 </div>
                 <div class="collapse" id="projectPanel4" aria-labelledby="card4" data-parent="#accordian">
@@ -156,7 +156,6 @@
                 <div class="img-hover" style="position:relative;">
                     <img class="img-hover" src="https://loremflickr.com/320/240" alt="Card image cap">
                     <div class="overlay" data-target="#projectPanel5" aria-controls="projectPanel5" data-toggle="collapse" aria-expanded="true">
-                        <div class="text"> Project Title </div>
                     </div>
                 </div>
                 <div class="collapse" id="projectPanel5" aria-labelledby="card5" data-parent="#accordian">
@@ -181,7 +180,6 @@
                 <div class="img-hover" style="position:relative;">
                     <img class="img-hover" src="https://loremflickr.com/320/240" alt="Card image cap">
                     <div class="overlay" data-target="#projectPanel6" aria-controls="projectPanel6" data-toggle="collapse" aria-expanded="false">
-                        <div class="text"> Project Title </div>
                     </div>
                 </div>
                 <div class="collapse" id="projectPanel6" aria-labelledby="card6" data-parent="#accordian">

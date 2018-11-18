@@ -4,11 +4,27 @@
     max-width: 1200px;  /*or 950px*/ 
     background-color: white;    
 }
-.name { text-align:center; }
+.name {
+    text-align: center;
+}
+#nav1 {
+    z-index: 20;
+    position: fixed;
+    display: inline-block;
+    float: left;
+    vertical-align: initial;
+    max-width: 256px;
+    height: 100%;
+}
 
-#nav1 { z-index: 100; }
-
-.nav-item a{
+#nav1 img {
+    padding:10px;
+}
+.nav-item{
+    padding-right: 10%;
+    padding-left: 0;
+}
+.nav-item a {
     color: black;
 }
 
@@ -22,7 +38,7 @@
 
 #c1 {
     padding-top: 10px;
-    margin-left: 20%;
+    margin-left: 18%;
 }
 
 #panelGroup {
@@ -62,16 +78,6 @@ button[aria-expanded="true"] {
 .collapse#panel{
     transition:ease 0.5s;
 }
-
-#nav1 {
-        padding-bottom: 20%;
-        position: fixed;
-        display: inline-block;
-        float:left;
-        vertical-align: middle;
-        width: 256px;
-        height: initial;
-    }
 
 .carousel-inner img {
     height: auto;
@@ -159,8 +165,8 @@ button[aria-expanded="true"] {
     height: 175px;
 }
 .img-hover {
-    left:-30px;
-    margin: 25px;
+    left:-40px;
+    margin: 35px;
     position: absolute;
     border: 2px;
     width: 100px;
@@ -169,7 +175,7 @@ button[aria-expanded="true"] {
 
 /*overlay background color*/
 .overlay {
-    margin: 25px;
+    margin: 35px;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -178,21 +184,23 @@ button[aria-expanded="true"] {
     opacity: 0;
     width: inherit;
     height: inherit;
-    background-color: lightgray;
+    background-color: dimgray;
     transition: ease-in 0.3s;
 }
+
 .img-hover:hover .overlay {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
     transform: scale(1.1);
-    opacity: 0.45;
+    opacity: 0.50;
 }
+
 /*text*/
 .text{
     opacity:0;
-    font-size: 24px;
+    font-size: 36px;
     color: black;
-    text-align: left;
-    transform:translate(0,-35px);
+    position:relative;
+    transform:translate(35,-35px);
 }
 /* Slide Up animation */
 .SlideUp {
@@ -211,7 +219,7 @@ button[aria-expanded="true"] {
 
 #projectsText {
     position:absolute;
-    top:10px;
+    top:-5px;
     height: 100%;
     margin: 0;
     left: 150px;
@@ -221,6 +229,7 @@ button[aria-expanded="true"] {
 }
 
 #projectsText img {
+    margin: 10px;
     display:block;
     max-width:90%;
 }
@@ -234,20 +243,19 @@ button[aria-expanded="true"] {
     width: 1050px;
     height: 1000px;
     float:right;
-    top:10px;
     left:10px;
+    margin-top:10px;
     max-width:100%;
     /* change color here */
-    background-color: dimgray;
+    background-color: honeydew;
 }
 #projects-overview {
     width: 1200px;
     height: 100%;
     display:block;
-    right: 10px;
+    left: 10px;
     padding:10px;
-    margin:10px;
     max-width: 100%;
     /* change color here */
-    background-color: #42DCA3;
+    background-color: lightgoldenrodyellow;
 }
