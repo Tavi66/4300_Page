@@ -42,6 +42,9 @@ document.getElementById('nav1').innerHTML = `
         <a class="nav-link" href="publications.html"> PUBLICATIONS </a>
     </li>
     <li class="nav-item">
+    <a class="nav-link" href="Award.html"> AWARD </a>
+    </li>   
+    <li class="nav-item">
         <a class="nav-link" href="#"> CONTACT </a>
     </li>
 
