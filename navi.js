@@ -1,4 +1,22 @@
-document.getElementById('listNavi').innerHTML = `
+document.getElementById('nav1').innerHTML = `
+<!-- Profile image -->
+<!--
+<img class="img-circle" src="assets/img/image_name.jpg" />
+    -->
+<div class="card-img-top img-circle collapse navbar-collapse" style="position: relative; margin-top: 15%;">
+    <a href="#">
+        <img class="img-circle" src="assets/img/TingZhang.jpg" />
+    </a>
+</div>
+<!--  -->
+<button class="navbar-toggler-left navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+<!-- Name -->
+<p class="name" style="color:black; padding-top:10px; font-weight:bold;"> Dr. Ting Zhang </p>
+<!--  -->
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul style="list-style-type:none;" >
     <li class="nav-item active">
         <a class="nav-link" href="#"> HOME </a>
     </li>
@@ -26,4 +44,7 @@ document.getElementById('listNavi').innerHTML = `
     <li class="nav-item">
         <a class="nav-link" href="#"> CONTACT </a>
     </li>
+
+    </ul>
+    </div>
 `
