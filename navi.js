@@ -18,10 +18,7 @@ document.getElementById('nav1').innerHTML = `
 <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul style="list-style-type:none;" >
     <li class="nav-item active">
-        <a class="nav-link" href="#"> HOME </a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">ABOUT </a>
+        <a class="nav-link" href="#"> BIOGRAPHY </a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="courses.html"> COURSES </a>
@@ -45,7 +42,7 @@ document.getElementById('nav1').innerHTML = `
     <a class="nav-link" href="Award.html"> AWARD </a>
     </li>   
     <li class="nav-item">
-        <a class="nav-link" href="#"> CONTACT </a>
+        <a class="nav-link" href="contact.html"> CONTACT </a>
     </li>
 
     </ul>
