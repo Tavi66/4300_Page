@@ -21,7 +21,7 @@ document.getElementById('listNavi').innerHTML = `
         <a class="nav-link" href="teachingexperience.html"> TEACHING EXPERIENCE </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#"> PUBLICATIONS </a>
+        <a class="nav-link" href="publications.html"> PUBLICATIONS </a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="#"> CONTACT </a>
