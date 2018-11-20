@@ -9,7 +9,7 @@ document.getElementById('listNavi').innerHTML = `
         <a class="nav-link" href="courses.html"> COURSES </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#"> EDUCATION </a>
+        <a class="nav-link" href="education.html"> EDUCATION </a>
     </li>
     <li class="nav-item">
         <a class="nav-link" href="projects.html"> PROJECTS </a>
@@ -21,7 +21,7 @@ document.getElementById('listNavi').innerHTML = `
         <a class="nav-link" href="teachingexperience.html"> TEACHING EXPERIENCE </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="#"> PUBLICATIONS </a>
+        <a class="nav-link" href="publications.html"> PUBLICATIONS </a>
     </li>
     <li class="nav-item">
     <a class="nav-link" href="Award.html"> AWARD </a>
