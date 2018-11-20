@@ -6,6 +6,7 @@
 }
 .name {
     text-align: center;
+    overflow:hidden;
 }
 #nav1 {
     z-index: 20;
@@ -15,6 +16,10 @@
     vertical-align: initial;
     max-width: 256px;
     height: 100%;
+}
+
+#nav1 button {
+    margin-left:20%;
 }
 
 #nav1 img {
