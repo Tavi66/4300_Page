@@ -264,3 +264,9 @@ button[aria-expanded="true"] {
     /* change color here */
     background-color: lightgoldenrodyellow;
 }
+#educationCardColor{
+    border:none;
+    outline:none;
+    /* change color here */
+    background-color:deepskyblue;
+}
