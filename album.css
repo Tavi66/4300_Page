@@ -1,8 +1,12 @@
+/*background color*/
+body{
+    background-color:floralwhite;
+}
 .container {
     margin-right: 10px;
     margin-left: 10px;
     max-width: 1200px;  /*or 950px*/ 
-    background-color: white;    
+    background-color: transparent;    
 }
 .name {
     text-align: center;
@@ -74,6 +78,7 @@
     padding: 10px;
     border:1px solid;
     border-color:lightgray;
+    background-color:white;
 }
 
 .btn-success-panel {
