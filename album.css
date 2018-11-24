@@ -8,7 +8,21 @@
     text-align: center;
     overflow:hidden;
 }
+.biography-section h1 {
+    text-align: center;
+    color: purple;
+}
+.biography-section h3 {
+    text-align: left;
+}
+.biography-section img {
+    display:inline-block;
+    /*float:right;*/
+}
 .card {
+    animation: fadeInRight 1s ease-out;
+}
+#educationAnimated {
     animation: fadeInRight 1s ease-out;
 }
 #nav1 {
