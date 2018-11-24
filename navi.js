@@ -5,7 +5,7 @@ document.getElementById('nav1').innerHTML = `
     -->
 <div class="card-img-top img-circle collapse navbar-collapse" style="position: relative; margin-top: 15%;">
     <a href="#">
-        <img class="img-circle" src="assets/img/TingZhang.jpg" />
+        <img id="profileImg" class="img-circle" src="assets/img/TingZhang.jpg" />
     </a>
 </div>
 <!--  -->

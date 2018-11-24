@@ -8,6 +8,9 @@
     text-align: center;
     overflow:hidden;
 }
+.card {
+    animation: fadeInRight 1s ease-out;
+}
 #nav1 {
     z-index: 20;
     position: fixed;
@@ -65,6 +68,7 @@
     border-color: transparent;
     margin-bottom: 10px;
     margin-top: 10px;
+    animation: fadeInRight 1s ease-out;
 }
 
 .btn-success-panel:focus{
@@ -84,23 +88,17 @@ button[aria-expanded="true"] {
     transition:ease 0.5s;
 }
 
-.carousel-inner img {
-    height: auto;
-    /*change here to modify carousel images' width*/
-    width:inherit;
-    margin: auto;
-}
-
 #buttonMenu {
     background-color: transparent;
 }
 /* Timeline */
 /* The actual timeline (the vertical ruler) */
 .timeline {
-    float:left;
+    float: left;
     position: relative;
     max-width: 1525px;
     margin: 0 auto;
+    animation: fadeInRight 1s ease-out;
 }
 
     .timeline::after {
@@ -125,6 +123,7 @@ button[aria-expanded="true"] {
     background-color: ghostwhite;
     position: relative;
     border-radius: 6px;
+    animation: fadeInRight 1s ease-out;
 }
 #researchTimeline .content {
     background-color: lemonchiffon;
@@ -169,6 +168,11 @@ button[aria-expanded="true"] {
     width: 175px;
     height: 175px;
 }
+#profileImg {
+    width:100%;
+    height:175px;
+    transform:scale(0.9);
+}
 .img-hover {
     left:-40px;
     margin: 35px;
@@ -197,29 +201,6 @@ button[aria-expanded="true"] {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
     transform: scale(1.1);
     opacity: 0.50;
-}
-
-/*text*/
-.text{
-    opacity:0;
-    font-size: 36px;
-    color: black;
-    position:relative;
-    transform:translate(35,-35px);
-}
-/* Slide Up animation */
-.SlideUp {
-    height:0;
-}
-
-@keyframes SlideUp {
-    0% {
-        transform: translateY(100%);
-    }
-
-    100% {
-        transform: translateY(0%);
-    }
 }
 
 #projectsText {
@@ -257,16 +238,69 @@ button[aria-expanded="true"] {
 #projects-overview {
     width: 1200px;
     height: 100%;
-    display:block;
+    display: block;
     left: 10px;
-    padding:10px;
+    padding: 10px;
     max-width: 100%;
     /* change color here */
     background-color: lightgoldenrodyellow;
+    animation: fadeInRight 1s ease-out;
 }
 #educationCardColor{
     border:none;
     outline:none;
     /* change color here */
     background-color:deepskyblue;
+}
+/* ANIMATIONS */
+/* Slide Up animation */
+.SlideUp {
+    height: 0;
+}
+
+@keyframes SlideUp {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes fadeInRight {
+    from {
+        opacity: 0;
+        /*-webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);*/
+        -webkit-transform: translate3d(50px, 0, 0);
+        transform: translate3d(50px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        /*-webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);*/
+        -webkit-transform: translate3d(50px, 0, 0);
+        transform: translate3d(50px, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
 }
