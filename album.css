@@ -2,7 +2,9 @@
     margin-right: 10px;
     margin-left: 10px;
     max-width: 1200px;  /*or 950px*/ 
-    background-color: white;    
+    background-color: white;   
+    animation: fadeInUpBig 1s ease-out;
+ 
 }
 .name {
     text-align: center;
@@ -11,13 +13,17 @@
 .biography-section h1 {
     text-align: center;
     color: purple;
+
+    
 }
 .biography-section h3 {
     text-align: left;
+
 }
 .biography-section img {
     display:inline-block;
     /*float:right;*/
+    
 }
 .card {
     animation: fadeInRight 1s ease-out;
@@ -319,5 +325,64 @@ button[aria-expanded="true"] {
     animation-name: fadeInRight;
 }
 
-
+@-webkit-keyframes fadeOutDown {
+    from {
+      opacity: 1;
+    }
   
+    to {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 40px, 0);
+      transform: translate3d(0, 40px, 0);
+    }
+  }
+  
+  @keyframes fadeOutDown {
+    from {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 40px, 0);
+      transform: translate3d(0, 40px, 0);
+    }
+  }
+  
+  .fadeOutDown {
+    -webkit-animation-name: fadeOutDown;
+    animation-name: fadeOutDown;
+  }
+
+  @-webkit-keyframes fadeInUpBig {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 2000px, 0);
+      transform: translate3d(0, 2000px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInUpBig {
+    from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 2000px, 0);
+      transform: translate3d(0, 2000px, 0);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  .fadeInUpBig {
+    -webkit-animation-name: fadeInUpBig;
+    animation-name: fadeInUpBig;
+  }
