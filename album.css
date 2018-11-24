@@ -12,6 +12,9 @@ body{
     text-align: center;
     overflow:hidden;
 }
+.biography-section {
+    animation:fadeInLeftBig 1s ease-out;
+}
 .biography-section h1 {
     text-align: center;
     color: purple;
@@ -65,7 +68,6 @@ body{
 #c1 {
     padding-top: 10px;
     margin-left: 18%;
-    /*animation:fadeInLeftBig 1s ease-out;*/
 }
 
 #panelGroup {
