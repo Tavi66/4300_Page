@@ -1,14 +1,19 @@
+/*background color*/
+body{
+    background-color:white;
+}
 .container {
     margin-right: 10px;
     margin-left: 10px;
     max-width: 1200px;  /*or 950px*/ 
-    background-color: white;   
-    animation: fadeInUpBig 1s ease-out;
- 
+    background-color: transparent;    
 }
 .name {
     text-align: center;
     overflow:hidden;
+}
+.biography-section {
+    animation:fadeInLeftBig 1s ease-out;
 }
 .biography-section h1 {
     text-align: center;
@@ -80,6 +85,7 @@
     padding: 10px;
     border:1px solid;
     border-color:lightgray;
+    background-color:white;
 }
 
 .btn-success-panel {
@@ -273,7 +279,7 @@ button[aria-expanded="true"] {
     background-color:deepskyblue;
 }
 /* ANIMATIONS */
-/* Slide Up animation */
+/* Slide Up */
 .SlideUp {
     height: 0;
 }
@@ -287,7 +293,7 @@ button[aria-expanded="true"] {
         transform: translateY(0%);
     }
 }
-
+/* Fade In Right */
 @-webkit-keyframes fadeInRight {
     from {
         opacity: 0;
@@ -324,65 +330,38 @@ button[aria-expanded="true"] {
     -webkit-animation-name: fadeInRight;
     animation-name: fadeInRight;
 }
+/* Fade In Left Big*/
+@-webkit-keyframes fadeInLeftBig {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-2000px, 0, 0);
+        transform: translate3d(-2000px, 0, 0);
+    }
 
-@-webkit-keyframes fadeOutDown {
-    from {
-      opacity: 1;
-    }
-  
     to {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 40px, 0);
-      transform: translate3d(0, 40px, 0);
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
     }
-  }
-  
-  @keyframes fadeOutDown {
-    from {
-      opacity: 1;
-    }
-  
-    to {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 40px, 0);
-      transform: translate3d(0, 40px, 0);
-    }
-  }
-  
-  .fadeOutDown {
-    -webkit-animation-name: fadeOutDown;
-    animation-name: fadeOutDown;
-  }
+}
 
-  @-webkit-keyframes fadeInUpBig {
+@keyframes fadeInLeftBig {
     from {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 2000px, 0);
-      transform: translate3d(0, 2000px, 0);
+        opacity: 0;
+        -webkit-transform: translate3d(-2000px, 0, 0);
+        transform: translate3d(-2000px, 0, 0);
     }
-  
+
     to {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
     }
-  }
+}
+
+.fadeInLeftBig {
+    -webkit-animation-name: fadeInLeftBig;
+    animation-name: fadeInLeftBig;
+}
+
   
-  @keyframes fadeInUpBig {
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 2000px, 0);
-      transform: translate3d(0, 2000px, 0);
-    }
-  
-    to {
-      opacity: 1;
-      -webkit-transform: none;
-      transform: none;
-    }
-  }
-  
-  .fadeInUpBig {
-    -webkit-animation-name: fadeInUpBig;
-    animation-name: fadeInUpBig;
-  }
