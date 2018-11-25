@@ -104,11 +104,12 @@ body{
     color: gray;
 }
 
-.panelText{
+.panelText {
     padding: 10px;
-    border:1px solid;
-    border-color:lightgray;
-    background-color:white;
+    border: 1px solid;
+    border-color: lightgray;
+    background-color: white;
+    animation: fadeInRight 1s ease-out;
 }
 
 .btn-success-panel {
