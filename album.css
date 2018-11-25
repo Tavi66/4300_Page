@@ -13,7 +13,7 @@ body{
     overflow:hidden;
 }
 .biography-section {
-    animation:fadeInLeftBig 1s ease-out;
+    animation:fadeInRight 1s ease-out;
 }
 .biography-section h1 {
     text-align: center;
@@ -29,6 +29,29 @@ body{
     display:inline-block;
     /*float:right;*/
     
+}
+.contactForm {
+    width: 320px;
+    float: left;
+    top: 20px;
+    right: 300px;
+    display: inline-block;
+    animation: fadeInRight 1s ease-out;
+}
+.contactForm input{
+    margin:10px;
+}.contactForm textarea{
+     margin:10px;
+ }
+.contactInfo {
+    display: inline-block;
+    width: 320px;
+    animation: fadeInRight 1s ease-out;
+}
+.contactInfo img {
+    width:60px;
+    height:60px;
+    margin:10px;
 }
 .card {
     animation: fadeInRight 1s ease-out;
