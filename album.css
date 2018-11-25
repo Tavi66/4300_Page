@@ -32,11 +32,11 @@ body{
 }
 .contactForm {
     width: 500px;
-    float:left;
     top: 20px;
     right: 500px;
     display: inline-block;
     animation: fadeInRight 1s ease-out;
+    float:left;
 }
 
 .contactForm input[type=submit] {
@@ -101,16 +101,17 @@ body{
     animation: fadeInRight 1s ease-out;
 }
 #nav1 {
+    float:left;
     z-index: 20;
     position: fixed;
     display: inline-block;
-    float: left;
     vertical-align: initial;
     max-width: 256px;
     height: 100%;
 }
 
 #nav1 button {
+  
     margin-left:20%;
 }
 
