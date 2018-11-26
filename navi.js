@@ -36,9 +36,6 @@ document.getElementById('nav1').innerHTML = `
         <a class="nav-link" href="teachingexperience.html"> TEACHING EXPERIENCE </a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="services.html"> SERVICES </a>
-    </li>    
-    <li class="nav-item">
         <a class="nav-link" href="publications.html"> PUBLICATIONS </a>
     </li>
     <li class="nav-item">
