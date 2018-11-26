@@ -32,7 +32,8 @@ body{
     margin-right: auto;
     padding-left: 30px;
     padding-right: 30px;
-    max-width: 750px;  
+    max-width: 750px;
+    animation: fadeInRight 1s ease-out;
 }
 .stackedit__html img {
     max-width:100%;
