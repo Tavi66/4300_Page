@@ -472,8 +472,8 @@ button[aria-expanded="true"] {
 }
 .grow:hover
 {
-        -webkit-transform: scale(1.02);
-        -ms-transform: scale(1.02);
-        transform: scale(1.02);
+        -webkit-transform: scale(1.01);
+        -ms-transform: scale(1.01);
+        transform: scale(1.01);
 }
   
