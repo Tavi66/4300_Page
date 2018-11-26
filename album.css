@@ -17,19 +17,49 @@ body{
 }
 .biography-section h1 {
     text-align: center;
-    color: purple;
-
-    
+    color: purple; 
 }
 .biography-section h3 {
     text-align: left;
-
 }
 .biography-section img {
     display:inline-block;
-    /*float:right;*/
-    
+    /*float:right;*/    
 }
+.stackedit__html {
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 750px;  
+}
+.stackedit__html img {
+    max-width:100%;
+}
+    .stackedit__html h1 {
+        font-variant-ligatures: common-ligatures;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:xx-large;
+        font-weight: 100;
+        line-height: 1.33;
+        margin: 0.6em 0;
+    }
+    .stackedit__html h4 {
+        font-variant-ligatures: common-ligatures;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 1.8em 0;
+        font-weight: 500;
+        line-height: 1.33;
+    }
+    .stackedit__html h3 {
+        font-variant-ligatures: common-ligatures;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        margin: 1.8em 0;
+        font-weight: 200;
+        line-height: 1.33;
+    }
 .contactForm {
     width: 500px;
     top: 20px;
@@ -38,7 +68,6 @@ body{
     animation: fadeInRight 1s ease-out;
     float:left;
 }
-
 .contactForm input[type=submit] {
     background-color: rgb(74, 166, 228);
     color: white;
@@ -61,28 +90,24 @@ body{
     clear: both;
 }
 
-
-
 .col-75 {
     float: left;
     width: 75%;
     margin-top: 6px;
 }
 .contactForm input[type=submit]:hover {
-    background-color: #388be9;
-    
+    background-color: #388be9;    
 }
 .contactForm input{
     margin:10px;
-
-}.contactForm textarea{
+}
+.contactForm textarea{
     width: 90%;
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
      margin:10px;
-
  }
 .contactInfo {
     display: inline-block;
@@ -110,8 +135,7 @@ body{
     height: 100%;
 }
 
-#nav1 button {
-  
+#nav1 button {  
     margin-left:20%;
 }
 
