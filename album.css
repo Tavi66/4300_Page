@@ -477,7 +477,16 @@ button[aria-expanded="true"] {
     border-style: solid;
     border-color: rgb(74, 139, 236);
             border-width: 5px 5px 5px 5px;*/     
-    }
+}
+#publicationPanel {
+    width: 1100px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgb(74, 139, 236);
+            border-width: 2px 2px 2px 2px;
+            animation:fadeInRight 1s ease-out;
+            padding:5px;
+}
 .grow:hover
 {
         -webkit-transform: scale(1.01);
