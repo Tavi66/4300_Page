@@ -174,7 +174,8 @@ body{
 button[aria-expanded="true"] {
     transition: .3s transform ease-in-out;
     color: white;
-    background-color: #42DCA3;
+    /* Uncomment to have sea green background color for collapse panel button*/
+    /*background-color: #42DCA3;*/
     outline: none;
 }
 .collapse#panel{
