@@ -473,11 +473,10 @@ button[aria-expanded="true"] {
 #home
 {
     width:800px;
-    border-radius: 5px;
+    /*border-radius: 5px;
     border-style: solid;
     border-color: rgb(74, 139, 236);
-            border-width: 5px 5px 5px 5px;
-      
+            border-width: 5px 5px 5px 5px;*/     
     }
 .grow:hover
 {
