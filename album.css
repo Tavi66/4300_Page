@@ -1,7 +1,10 @@
+/*----------------------------------------------------------------------*/
 /*background color*/
 body{
     background-color:white;
 }
+/*----------------------------------------------------------------------*/
+/* CLASSES */
 .container {
     margin-right: 10px;
     margin-left: 10px;
@@ -126,23 +129,7 @@ body{
 #educationAnimated {
     animation: fadeInRight 1s ease-out;
 }
-#nav1 {
-    float:left;
-    z-index: 20;
-    position: fixed;
-    display: inline-block;
-    vertical-align: initial;
-    max-width: 256px;
-    height: 100%;
-}
 
-#nav1 button {  
-    margin-left:20%;
-}
-
-#nav1 img {
-    padding:10px;
-}
 .nav-item{
     padding-right: 10%;
     padding-left: 0;
@@ -159,17 +146,6 @@ body{
     font-weight: bold;
 }
 
-#c1 {
-    padding-top: 10px;
-    margin-left: 18%;
-}
-
-#panelGroup {
-    /*align-items:inherit;*/
-    display:block;
-    position:relative;
-    color: gray;
-}
 
 .panelText {
     padding: 10px;
@@ -198,16 +174,14 @@ body{
 button[aria-expanded="true"] {
     transition: .3s transform ease-in-out;
     color: white;
-    background-color: #42DCA3;
+    /* Uncomment to have sea green background color for collapse panel button*/
+    /*background-color: #42DCA3;*/
     outline: none;
 }
 .collapse#panel{
     transition:ease 0.5s;
 }
 
-#buttonMenu {
-    background-color: transparent;
-}
 /* Timeline */
 /* The actual timeline (the vertical ruler) */
 .timeline {
@@ -285,12 +259,7 @@ button[aria-expanded="true"] {
     width: 175px;
     height: 175px;
 }
-#profileImg {
-    width:100%;
-    height:180px;
-    transform:scale(0.9);
-    
-}
+
 .img-hover {
     left:-40px;
     margin: 35px;
@@ -319,6 +288,45 @@ button[aria-expanded="true"] {
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
     transform: scale(1.1);
     opacity: 0.50;
+}
+/*----------------------------------------------------------------------*/
+/* IDs */
+#c1 {
+    padding-top: 10px;
+    margin-left: 18%;
+}
+#nav1 {
+    float:left;
+    z-index: 20;
+    position: fixed;
+    display: inline-block;
+    vertical-align: initial;
+    max-width: 256px;
+    height: 100%;
+}
+
+#nav1 button {  
+    margin-left:20%;
+}
+
+#nav1 img {
+    padding:10px;
+}
+#buttonMenu {
+    background-color: transparent;
+}
+#panelGroup {
+    /*align-items:inherit;*/
+    display:block;
+    position:relative;
+    color: gray;
+}
+
+#profileImg {
+    width:100%;
+    height:180px;
+    transform:scale(0.9);
+    
 }
 
 #projectsText {
@@ -370,6 +378,7 @@ button[aria-expanded="true"] {
     /* change color here */
     background-color:deepskyblue;
 }
+/*----------------------------------------------------------------------*/
 /* ANIMATIONS */
 /* Slide Up */
 .SlideUp {
