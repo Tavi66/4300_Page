@@ -487,6 +487,19 @@ button[aria-expanded="true"] {
             animation:fadeInRight 1s ease-out;
             padding:5px;
 }
+#project_page {
+    width:1100px;
+    height: 100%;
+    display: block;
+    left: 10px;
+    padding: 10px;
+    max-width: 100%;
+    background-color: #c0ebfa;
+    animation: fadeInRight 1s ease-out;
+    border-style: solid;
+    border-color: #c0ebfa;
+    border-radius: 5px;
+}
 .grow:hover
 {
         -webkit-transform: scale(1.01);
