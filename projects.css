@@ -40,16 +40,4 @@ img {
     border-style: none;
 
 }
-#project_1 {
-    width:1100px;
-    height: 100%;
-    display: block;
-    left: 10px;
-    padding: 10px;
-    max-width: 100%;
-    background-color: #eee6ff;
-    animation: fadeInRight 1s ease-out;
-    border-style: solid;
-    border-color: #8a00e6;
 
-}
