@@ -6,6 +6,7 @@
     padding-right: 30px;
     max-width: 750px;
     animation: fadeInRight 1s ease-out;
+    border-style: dashed;
 }
 
 h1, h2, h3, h4, h5, h6 {
